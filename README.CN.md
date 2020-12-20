@@ -1,5 +1,5 @@
 # PigMLang
-#### [English Readme](https://github.com/PhongSeow/PigMLang/blob/main/README.md)
+#### [English Readme](https://github.com/PhongSeow/PigMLang/blob/master/README.md)
 豚豚多语言是一个轻量的多语言处理工具。
 
 ## ***目录和文件描述***
@@ -11,11 +11,11 @@
 ##### Setup\VB6
 将目录中的类文件添加到您的 VB6 工程就可以使用。
 
-##### Setup\Core5.0
+##### Setup\DotNet5.0
 
 将目录中的文件添加到您的 .net 工程就可以使用，可以运行在 Windows、Linux 和 MacOS 平台。
 
-#### Src\Core5.0Win
+#### Src\DotNet5.0Win
 
 将目录中的文件添加到您的 .net 工程就可以使用，只能运行在 Windows 平台。
 
@@ -32,13 +32,13 @@
 
 VB6版本的源码和示例。
 
-#### Src\Core5.0
+#### Src\DotNet5.0
 
-.net Core5.0 版本的源码和控制台程序示例，编译程序可以运行在 Windows、Linux 和 MacOS 平台。
+.net 5.0 版本的源码和控制台程序示例，编译程序可以运行在 Windows、Linux 和 MacOS 平台。
 
-#### Src\Core5.0Win
+#### Src\DotNet5.0Win
 
-.net Core5.0 版本的源码和 Windows 窗体程序示例，编译程序只能运行在 Windows 平台。
+.net 5.0 版本的源码和 Windows 窗体程序示例，编译程序只能运行在 Windows 平台。
 
 ## ***语言区域信息***
 |Name|LCID|EnglishName|ChineseName|NativeName|

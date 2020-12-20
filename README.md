@@ -1,5 +1,5 @@
 # PigMLang
-#### [中文文档](https://github.com/PhongSeow/PigMLang/blob/main/README.CN.md)
+#### [中文文档](https://github.com/PhongSeow/PigMLang/blob/master/README.CN.md)
 Piggy Multilingual is a lightweight multi language processing tool.
 
 ## ***Folders and files description***
@@ -11,11 +11,11 @@ Execute code directory, if you don't want to see the source program, you can use
 ##### Setup\VB6
 Add the class file in the directory to your VB6 project.
 
-##### Setup\Core5.0
+##### Setup\DotNet5.0
 
 Add the files in the directory to your. Net project, which can run on Windows, Linux and MacOS platforms.
 
-#### Src\Core5.0Win
+#### Src\DotNet5.0Win
 
 Add the files in the directory to your. Net project, which can only run on Windows platform.
 
@@ -32,13 +32,13 @@ Multi language file directory. Because there is a .gitignore file, the multiling
 
 VB6 version of the source code and examples.
 
-#### Src\Core5.0
+#### Src\DotNet5.0
 
-.net Core 5.0 version of the source code and console program examples, compiler can run on Windows, Linux and MacOS platforms.
+.net 5.0 version of the source code and console program examples, compiler can run on Windows, Linux and MacOS platforms.
 
-#### Src\Core5.0Win
+#### Src\DotNet5.0Win
 
-.net core 5.0 version of the source code and windows forms program examples, compiler can only run on the windows platform.
+.net 5.0 version of the source code and windows forms program examples, compiler can only run on the windows platform.
 
 ## ***Language region information***
 |Name|LCID|EnglishName|ChineseName|NativeName|
