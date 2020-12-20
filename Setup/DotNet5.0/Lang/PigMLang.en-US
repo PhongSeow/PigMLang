@@ -1,0 +1,18 @@
+{Global}
+[OK]=OK
+[AppTitle]=AppTitle: 
+[AppPath]=AppPath: 
+[CurrCultureName]=CurrCultureName: 
+[CurrLCID]=CurrLCID: 
+[CurrMLangTitle]=CurrMLangTitle: 
+[CurrMLangFile]=CurrMLangFile: 
+[PressQuitDesc]=Press the Escape (Esc) key to quit.
+[PressGetAllLangInfTab]=Press A to GetAllLangInf(TAB)
+[PressGetAllLangInfMD]=Press B to GetAllLangInf(Markdown)
+[PressSetCurrLang]=Press C to Set Current Culture
+[RefCanUseCultureList]=Refresh Can Use Culture List...
+
+{MLang} 
+[SeleCurrCulture]=Input number to select current Culture: 
+[ReLoadMLangInf]=ReLoadMLangInf...
+[PleaseInp0To]=Please input 0 to 
