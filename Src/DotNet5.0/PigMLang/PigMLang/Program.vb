@@ -1,6 +1,4 @@
-Imports System
-Imports System.Runtime.InteropServices
-
+Imports System.IO
 Module Program
     Sub Main(args As String())
         Console.Write("Use the default culture for initialization...")

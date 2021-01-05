@@ -5,7 +5,7 @@
 '''* License: Copyright (c) 2020 Seow Phong, For more details, see the MIT LICENSE file included with this distribution.
 '''* Describe: A lightweight multi language processing class, As long as you refer to this class, you can implement multilingual processing|一个轻量的多语言处理类，只要引用本类就可以实现多语言处理。 
 '''* Home Url: https://www.seowphong.com or https://en.seowphong.com
-'''* Version: 1.0.10
+'''* Version: 1.0.11
 '''* Create Time: 30/11/2020
 '''* 1.0.2  1/12/2020   Modify GetAllLangInf, Add GetMLangText
 '''* 1.0.3  1/12/2020   Modify mInitCultureSortList
@@ -16,6 +16,7 @@
 '''* 1.0.8  14/12/2020  Remove Inherits PigBaseMini, Add mIsWindows,mOsCrLf,mOsPathSep,mEscapeStr,mUnEscapeStr,mConvStrWin2Linux
 '''* 1.0.9  19/12/2020  Modify mLoadMLangInf
 '''* 1.0.10 20/12/2020  Modify GetAllLangInf,mGetCultureInfoMD,mSetSubErrInf rename SetSubErrInf
+'''* 1.0.11 5/1/2021  Modify mNew, auto copy lang file.
 '''************************************
 ''' </summary>
 Imports System.Globalization
@@ -386,6 +387,25 @@ Public Class PigMLang
                     Me.mMkDir(MLangDir)
                     If Directory.Exists(MLangDir) = False Then
                         MLangDir = Me.AppPath
+                    End If
+                    Dim strUpLangDir As String, strUpDir As String
+                    If mbolIsWindows = True Then
+                        strUpDir = "..\..\..\"
+                    Else
+                        strUpDir = "../../../"
+                    End If
+                    strUpLangDir = strUpDir & "Lang"
+                    If Directory.Exists(strUpLangDir) = True Then
+                        Dim strSrcDir As String = Directory.GetParent(strUpDir).FullName & Me.mOsPathSep & "Lang"
+                        Dim diSrc As New DirectoryInfo(strSrcDir)
+                        For Each oFile In diSrc.GetFiles
+                            If InStr(oFile.Extension, "-") > 0 Then
+                                Dim strTarFile As String = MLangDir & Me.mOsPathSep & oFile.Name
+                                If File.Exists(strTarFile) = False Then
+                                    File.Copy(oFile.FullName, strTarFile)
+                                End If
+                            End If
+                        Next
                     End If
                 End If
             End If
